@@ -1,0 +1,59 @@
+
+.box {
+  p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+    margin-left: 6px;
+}
+
+  height: 342.64825439453125px;
+  width: 295px;
+  border-radius: 9px;
+  background: #f3f2ee;
+  display: flex;
+  flex-direction: column;
+  
+  .calendarWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px;
+   
+    .doH {
+        margin-right: 7px;
+    }
+  }
+  .mainCalendar {
+    @include center;
+    flex-direction: column;
+  }
+}
+
+.mobileCalendar {
+    display: none;
+}
+
+
+@media screen and (max-width:500px) {
+    .box {
+        display: none;
+    }
+    .mobileCalendar {
+        display: block;
+        height: 550px;
+        width: 95%;
+        background: #F3F2EE;
+        @include center;
+        justify-content: space-between;
+        flex-direction: column;
+            .Xbutton {
+               align-self: flex-start;
+               margin: 10px;
+           
+            }
+    }
+    
+    
+}

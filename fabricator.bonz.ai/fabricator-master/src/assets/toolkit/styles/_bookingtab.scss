@@ -1,0 +1,91 @@
+.bookingTab {
+  height: 104px;
+  width: 1205px;
+  background: #f3f2ee;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mobileBookingTab {
+  display: none;
+}
+
+.bookingTabArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 58.43px;
+    width: 58.43px;
+    margin-right: 35px;
+    margin-bottom: 41px;
+    margin-top: 10px;
+  }
+}
+.bookingTabArticle:hover {
+  cursor: pointer;
+}
+.textBox {
+  margin-right: 72px;
+  margin-left: 35px;
+  p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .pTwo {
+    font-weight: 600;
+  }
+}
+.bookingTabLine {
+  height: 100%;
+  width: 1px;
+  background: black;
+}
+
+
+@media screen and (max-width:500px) {
+  .bookingTab {
+    display: none;
+  }
+  .mobileBookingTab {
+    display: block;
+    height: 94px;
+    background: #F3F2EE;
+    width: 100%;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    .bigP {
+      font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    margin:0;
+    
+    }
+    .pTwo {
+      font-weight: 600;
+  	font-size: 14px;
+    line-height: 30px;
+    margin:0;
+  
+    }
+    .textBox {
+      margin:0;
+      margin-right: 28px;
+      margin-left: 3px;
+     
+    }
+    img {
+      margin:0;
+      margin-right: 30px;
+      margin-bottom: 50px;
+      height: 30px;
+      width: 24px;
+    }
+  }
+  .wrapper {
+    width: 372px;
+  }
+}

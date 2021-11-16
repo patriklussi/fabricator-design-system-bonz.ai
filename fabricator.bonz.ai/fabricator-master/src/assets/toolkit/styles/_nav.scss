@@ -1,0 +1,57 @@
+.navigation {
+    width: 100%;
+   
+    height: 132px;
+    background: #00C2BA;
+    @include center;
+    justify-content: space-between;
+    h2 {
+      font-weight: 700;
+    }
+    h2:hover {
+      cursor: pointer;
+    }
+   .hamburgerButton {
+     display:none;
+   }
+    .navWrap {
+      @include center;
+      width: 402px;
+      justify-content: space-between;
+      margin-right: 92px;
+    }
+   h1 {
+     margin-left: 89px;
+   }
+    .rectangle {
+    width:100%;
+    height: 11px;
+    background: #08F7FE;
+    position: absolute;
+    top:339px;
+  
+  
+  } 
+  }
+
+  @media screen and (max-width:500px) {
+    .navigation {
+      .navWrap {
+        display:none;
+      }
+    
+      h1 {
+        margin:0;
+      }
+      .rectangle {
+        display:none;
+      }
+      height: 60px;
+      .hamburgerButton {
+      display: block;
+      margin-right: 18px;
+      
+    }
+    }
+    
+   }

@@ -1,0 +1,90 @@
+.completedBookingWrap {
+    height:  769px;
+    background: #F3F2EE;
+    @include center;
+    flex-direction: column;
+    justify-content: space-around;
+    h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    }
+    
+    .middle {
+        height: 270px;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        .left {
+            flex-basis: 50%;
+            @include space-between;
+            flex-direction: column;
+            p {
+                margin:0;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        .right {
+            flex-basis:50%;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            p {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                margin:0;
+                margin-right: 13px;
+            }
+            .imgReplace {
+                height: 183.21px;
+                width: 280.9px;
+                background: red;
+                margin-bottom: 62px;
+              
+            }
+            
+        }
+    }
+}
+.mobileCard {
+    display: none;
+}
+@media screen and (max-width:500px) {
+  .mobileCard {
+      .mobileButton {
+          width: 100%;
+          margin-bottom: 0;
+      }
+      display: block;
+      height: 692.04px;
+      background: #F3F2EE;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .imgReplace {
+        height: 183.21px;
+        width: 280.9px;
+        background: red;
+        margin-bottom: 62px;
+      
+    }
+    .textWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        }
+    }
+  }
+  .completedBookingWrap {
+      display: none;
+  }
+  
+}

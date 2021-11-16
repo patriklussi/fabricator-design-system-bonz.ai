@@ -1,0 +1,8 @@
+colors:
+  primary:
+    Vibrant turquoise: "rgb(0, 194, 186)"
+    Light: "rgb(255, 255, 255)"
+  secondary:
+    Brown: "rgb(43, 35, 25)"
+    Dark green: "rgb(12, 37, 31)"
+    Background gray: "rgb(243, 242, 238)"
