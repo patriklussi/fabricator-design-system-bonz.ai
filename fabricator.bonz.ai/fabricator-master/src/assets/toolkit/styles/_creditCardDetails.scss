@@ -56,3 +56,42 @@
   }
  
 }
+
+@media screen and (max-width:500px) {
+  
+.creditCardDetailsWrap {
+  
+  justify-content: space-between;
+    height: 530.5px;
+    width: 90%;
+    .mobileButton {
+      display: block;
+    }
+    .bookingButton {
+      display: none;
+    }
+    .cdBox {
+      .inputCardNumber {
+        border:none;
+      }
+    }
+    .inputBox {
+      div {
+        .dateInput {
+          border:none;
+          background: none;
+          width: 100px;
+        }
+        .ccvInput {
+          border:none;
+          background: none;
+          width: 100px;
+          margin-right: 20px;
+        }
+      }
+    }
+}
+}
+
+
+
